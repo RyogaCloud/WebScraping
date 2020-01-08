@@ -1,10 +1,10 @@
 import requests
 import bs4
 
-# response = requests.get("https://review-of-my-life.blogspot.com/")
+# response = requests.get("取得したいURL")
 # print (response.text)
 
-html_doc = requests.get("https://review-of-my-life.blogspot.com").text
+html_doc = requests.get("取得したいURL").text
 soup = bs4.BeautifulSoup(html_doc, 'html.parser') # BeautifulSoupの初期化
 # print(soup.prettify())
 
